@@ -1,0 +1,22 @@
+{
+  "name": "DemoPod",
+  "version": "0.1.0",
+  "summary": "A short description of DemoPod.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/zosko/DemoPod",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "zosko": "bosko.petreski@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/zosko/DemoPod.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "DemoPod/Classes/**/*"
+}
