@@ -38,4 +38,4 @@ TestClass *newClass = [TestClass.alloc initWithString:@"sample string"];
 
 ## License
 
-DemoPod is released under the MIT license. See [LICENSE](https://github.com/zosko/LICENSE) for details.
+DemoPod is released under the MIT license. See [LICENSE](https://github.com/zosko/TestCocoaPod/blob/master/LICENSE) for details.
