@@ -21,6 +21,28 @@ Then, run the following command:
 pod install
 ```
 
+## If using Swift you need to add Bridge Header
+### Add new header file
+Click on File -> New -> File… and select “Header File” in the “Source” tab.
+
+### Name Header File
+Name this file [ProjectName]-Bridging-Header.h
+
+###  Locate Header File in Build Settings
+Open your project Build Settings and search for “Bridging”. Edit the key “Objective-C Bridging Header” to [ProjectName]/[ProjectName]-Bridging-Header.h.
+
+### Import pod
+You are now ready to add your imports into your Bridging-Header.h file for the pods you want to use.
+```objective-c
+#ifndef Bridging_h
+#define Bridging_h
+
+#import <DemoPod/TestClass.h>
+
+
+#endif /* Bridging_h */
+```
+
 ## Usage
 
 ### Create instance
@@ -28,12 +50,19 @@ pod install
 ```objective-c
     TestClass *newClass = [TestClass.alloc initWithString:@"sample string"];
 ```
+```swift
+let testClass = TestClass(string: "sample string")
+```
 
 ### Print init string
 
 ```objective-c
 TestClass *newClass = [TestClass.alloc initWithString:@"sample string"];
 [newClass printInitString];
+```
+```swift
+let testClass = TestClass(string: "sample string")
+testClass!.printInitString()
 ```
 
 ## License
