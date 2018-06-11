@@ -7,13 +7,19 @@
 
 #import "TestClass.h"
 
-@implementation TestClass
+@implementation TestClass{
+    NSString *stringInit;
+}
 
 -(TestClass *)initWithString:(NSString *)string{
     if ((self = [super init])){
-        NSLog(@"Hello World Cocoa Pod: [%@]",string);
+        stringInit = string;
     }
     return self;
+}
+
+-(void)printInitString{
+    NSLog(@"Hello World Cocoa Pod: [%@]",stringInit);
 }
 
 @end

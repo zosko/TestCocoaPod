@@ -10,5 +10,6 @@
 @interface TestClass : NSObject
 
 -(TestClass *)initWithString:(NSString *)string;
+-(void)printInitString;
 
 @end
