@@ -34,12 +34,12 @@ Open your project Build Settings and search for “Bridging”. Edit the key “
 ### Import pod
 You are now ready to add your imports into your Bridging-Header.h file for the pods you want to use.
 ```objective-c
-#ifndef Bridging_h
-#define Bridging_h
+#ifndef Bridging_Header_h
+#define Bridging_Header_h
 
 #import <DemoPod/TestClass.h>
 
-#endif /* Bridging_h */
+#endif /* Bridging_Header_h */
 ```
 
 ## Usage
