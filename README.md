@@ -39,7 +39,6 @@ You are now ready to add your imports into your Bridging-Header.h file for the p
 
 #import <DemoPod/TestClass.h>
 
-
 #endif /* Bridging_h */
 ```
 
@@ -48,7 +47,7 @@ You are now ready to add your imports into your Bridging-Header.h file for the p
 ### Create instance
 
 ```objective-c
-    TestClass *newClass = [TestClass.alloc initWithString:@"sample string"];
+TestClass *newClass = [TestClass.alloc initWithString:@"sample string"];
 ```
 ```swift
 let testClass = TestClass(string: "sample string")
