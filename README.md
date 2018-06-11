@@ -26,10 +26,10 @@ pod install
 Click on File -> New -> File… and select “Header File” in the “Source” tab.
 
 ### Name Header File
-Name this file [ProjectName]-Bridging-Header.h
+Name this file Bridging.h
 
 ###  Locate Header File in Build Settings
-Open your project Build Settings and search for “Bridging”. Edit the key “Objective-C Bridging Header” to [ProjectName]/[ProjectName]-Bridging-Header.h.
+Open your project Build Settings and search for “Bridging”. Edit the key “Objective-C Bridging Header” to project_name/project_name-Bridging-Header.h.
 
 ### Import pod
 You are now ready to add your imports into your Bridging-Header.h file for the pods you want to use.
